@@ -1,0 +1,18 @@
+package hitungluaslayanglayang;
+import java.util.Scanner;
+public class HitungLuasLayangLayang {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Masukkan panjang diagonal besar: ");
+        double diagonalBesar = input.nextDouble();
+        
+        System.out.print("Masukkan panjang diagonal kecil: ");
+        double diagonalKecil = input.nextDouble();
+        
+        // Menghitung luas layang-layang
+        double luasLayangLayang = (diagonalBesar * diagonalKecil) / 2;
+        
+        System.out.println("Luas Layang-layang adalah: " + luasLayangLayang);
+    }
+}
